@@ -75,10 +75,10 @@ public class CheckmarkWidgetView extends HabitWidgetView
                 text = getResources().getString(R.string.fa_check);
                 bgColor = activeColor;
                 fgColor = res.getColor(R.attr.highContrastReverseTextColor);
+                frame.setVisibility(GONE);
 
                 setShadowAlpha(0x4f);
                 rebuildBackground();
-
                 backgroundPaint.setColor(bgColor);
                 frame.setBackgroundDrawable(background);
                 break;
@@ -87,6 +87,7 @@ public class CheckmarkWidgetView extends HabitWidgetView
                 text = getResources().getString(R.string.fa_check);
                 bgColor = res.getColor(R.attr.cardBackgroundColor);
                 fgColor = res.getColor(R.attr.mediumContrastTextColor);
+                frame.setVisibility(GONE);
 
                 setShadowAlpha(0x00);
                 rebuildBackground();
@@ -98,6 +99,7 @@ public class CheckmarkWidgetView extends HabitWidgetView
                 text = getResources().getString(R.string.fa_times);
                 bgColor = res.getColor(R.attr.cardBackgroundColor);
                 fgColor = res.getColor(R.attr.mediumContrastTextColor);
+                frame.setVisibility(VISIBLE);
 
                 setShadowAlpha(0x00);
                 rebuildBackground();
